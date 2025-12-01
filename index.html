@@ -1,100 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>DarkForum77 - Thread</title>
+  <title>사이버포럼 :: 커뮤니티 스레드</title>
   <style>
+    :root {
+      --bg: #0d0d0d;
+      --panel: #151515;
+      --border: #333;
+      --primary: #6cf36c;
+      --accent: #50c2ff;
+    }
+
     body {
-      background-color: #0d0d0d;
-      color: #ccc;
+      background-color: var(--bg);
+      color: #d0d0d0;
       font-family: "Courier New", monospace;
       margin: 0;
       padding: 0;
     }
+
     header {
       background-color: #111;
-      color: #0f0;
-      padding: 10px 20px;
+      color: var(--primary);
+      padding: 12px 20px;
       font-size: 18px;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.5px;
     }
+
     .addressbar {
       background-color: #222;
       color: #aaa;
       font-size: 14px;
-      padding: 5px 10px;
+      padding: 6px 10px;
       font-family: monospace;
+      border-bottom: 1px solid var(--border);
     }
+
     .container {
       max-width: 1000px;
       margin: 20px auto;
       padding: 20px;
-      background-color: #151515;
-      border: 1px solid #333;
+      background-color: var(--panel);
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
     }
+
     .post {
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid var(--border);
       padding: 15px 0;
     }
+
     .username {
       color: #f55;
       font-weight: bold;
     }
+
     .timestamp {
       font-size: 12px;
       color: #777;
+      margin-left: 10px;
     }
+
     .title {
       font-size: 20px;
-      color: #0f0;
+      color: var(--primary);
       margin: 10px 0;
     }
+
+    .summary {
+      line-height: 1.6;
+      color: #e4e4e4;
+    }
+
     .warning {
-      color: #f00;
+      color: #ff7b00;
       font-weight: bold;
       margin: 15px 0;
     }
+
     .comment {
       margin: 10px 0;
       padding-left: 20px;
-      border-left: 2px solid #333;
+      border-left: 2px solid var(--border);
+      line-height: 1.5;
     }
+
     .comment .username {
-      color: #0ff;
+      color: var(--accent);
     }
+
     a {
-      color: #0f0;
+      color: var(--primary);
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    DarkForum77 :: Underground Threads
+    사이버포럼 :: 커뮤니티 스레드
   </header>
   <div class="addressbar">
-    http://darkforum77xyz.onion/thread/SHIB-Emotion-Sim
+    https://cyberforum.local/thread/security-awareness-guide
   </div>
   <div class="container">
     <div class="post">
-      <span class="username">anon_china77</span> 
-      <span class="timestamp">[Posted: 2020-11-13 04:21 UTC]</span>
+      <span class="username">sec_ops</span>
+      <span class="timestamp">[작성: 2024-10-21 09:15 UTC]</span>
       <div class="title">
-        SHIB-Emotion_Sim_Alpha2020-25_FULL_draft-V3.pdf
+        Security-Awareness_Guide_2024_v3.pdf
       </div>
+      <p class="summary">
+        사내 보안 인식 플레이북 최신 초안입니다. 피싱 대응 연습 시나리오와
+        AI 기반 소셜 엔지니어링 사례, 월간 점검용 체크리스트를 포함했습니다.
+        다음 주 모의훈련 전에 팀 리드 분들은 내려받아 검토해주세요.
+      </p>
       <p>
-        <a href="#">Download Link</a> (encrypted mirror)<br>
-        internal sim draft, confidential use only.
+        <a href="#">다운로드 (내부 미러)</a><br>
+        체크섬: cbe4:912f:88de
       </p>
       <div class="warning">
-        [WARNING] leaked file, do not share or reupload
+        [공지] 내부 교육 자료입니다. 승인된 팀원 외 공유 금지.
       </div>
     </div>
     <div class="comment">
-      <span class="username">user99</span>: fake?
+      <span class="username">blue_team</span>: 피싱 연습 진행해봤는데 내용이 명확하고 간결합니다. 👍
     </div>
     <div class="comment">
-      <span class="username">anon77</span>: confirmed legit. traced back to gov server.
+      <span class="username">analyst_lee</span>: 3장에 클라우드 오구성 시나리오 2개를 추가했습니다. 검토 부탁드립니다.
     </div>
   </div>
 </body>
